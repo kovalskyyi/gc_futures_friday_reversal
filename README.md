@@ -153,3 +153,18 @@ returns.
 - [Research notebook](notebooks/friday_retracement_xau.ipynb): data preparation,
   feature engineering, EDA, confidence intervals and statistical tests.
 - [Cleaned daily data](dataset/GC%20Daily%20OHLC%20Data_clean.csv).
+
+## Setup
+
+The dependencies in `requirements.txt` match the project's Python 3.14 environment.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m jupyterlab
+```
+
+Open `notebooks/friday_retracement_xau.ipynb` and run the cells from top to bottom.
+Check the CSV path in the data-loading cell and adjust it for your local checkout
+if needed. In VS Code, select `.venv` as the notebook's Python kernel.
